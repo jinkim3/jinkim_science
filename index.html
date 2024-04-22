@@ -17,37 +17,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jin Kim's Personal Website</title>
     <style>
-    .container_1 {
-        width: 97%;
-        margin: 0 auto; /* This will center the div */
-    }
-    ul {
-        padding-left: 20px;
-    }
-    .li-level-1 {
-        font-size: x-large;
-        margin-left: 0px;
-        margin-bottom: 10px;
-    }
-    .li-level-2 {
-        margin-left: -5px;
-        margin-bottom: 10px;
-    }
+        body {
+            background: #f7f7f7;
+        }
+        #main-container {
+            font-family: 'Times New Roman', serif;
+            width: 900px;
+            margin: 20px auto;
+            overflow: auto; /* Can prevent margin collapse */
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 13px;
+        }
+        #researcher-name {
+            font-size: 180%;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        #job-title {
+            font-size: 150%;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #google-scholar-page {
+            font-size: 150%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #email-table {
+            font-size: 130%;
+            margin: 0 auto 15px;
+        }
+        .li-level-1 {
+            font-size: 130%;
+            font-weight: bold;
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+        .li-level-2 {
+            font-size: 105%;
+            margin-left: -20px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-    <div id="main_content" style="font-size: x-large;">
-        <div class="container_1">
-        <div style="font-size: x-large; text-align: center;">
-            <b>Jin Kim</b></div>
-        <div style="text-align: center; margin-top: 20px">
-        <b>Postdoc at Northeastern University</b></div>
-        <div style="text-align: center; margin-top: 15px">
+    <div id="main-container">
+        <div id="researcher-name">Jin Kim</div>
+        <div id="job-title">Postdoc at Northeastern University</div>
+        <div id="google-scholar-page">
             <a href="https://scholar.google.com/citations?user=lm-ikHEAAAAJ&hl=en">
             Google Scholars Page</a>
         </div>
-        <div id="email_table" style="font-size: large;">
-            <table style="margin-left: auto; margin-right: auto; margin-top: 25px">
+        <div>
+            <table id="email-table">
             <tr>
                 <td style="vertical-align: top;">Email: </td>
                 <td><a href="mailto:jin.kim1@northeastern.edu">
@@ -61,7 +90,7 @@
             </table>
         </div>
         <ul>
-            <li class="li-level-1">Publications / Accepted papers
+            <li class="li-level-1">Publications
              <!-- / Forthcoming Paper(s)</li> -->
             <li style="display: inline; font-size: large;">
                 <ul>
@@ -100,9 +129,13 @@
                             Walk This Way: How Weight Distorts Gender 
                             Identification of Point-Light Walkers.</span>
                         <br>
-                        <b>Accepted for publicaion at
-                            <i>Social Cognition</i></b>.
-                        <br>Jared Wong & Jin Kim (2024).
+                        <b><i>Social Cognition</i></b>.
+                        <br>
+                        Jared Wong & Jin Kim (2024).
+                        <br>
+                        <a href="https://doi.org/10.1521/soco.2024.42.2.133"
+                            target="_blank">
+                            https://doi.org/10.1521/soco.2024.42.2.133</a>
                     </li>
                     <li class="li-level-2">
                         <span style="color:#800020;">
@@ -138,7 +171,7 @@
                         Jin Kim, George E. Newman, Natalie O. Fedotova, 
                         & Paul Rozin (2022).
                         <br>
-                        <a href="https://doi.org/10.1002/jcpy.1331"
+                        <a href="https://myscp.onlinelibrary.wiley.com/doi/10.1002/jcpy.1331"
                         target="_blank">https://doi.org/10.1002/jcpy.1331</a>
                         <br>
                         <a href="https://psyarxiv.com/mt8kn/"
@@ -202,7 +235,7 @@
             <li class="li-level-1">Programs / R Packages</li>
             <li style="display: inline; font-size: large;">
                 <ul>
-                    <li style="margin-top: 5px">
+                    <li class="li-level-2">
                         Floodlight Analysis Tool: 
                         <a href="https://osf.io/3hzcn"
                         target="_blank">Tutorial</a>
@@ -214,7 +247,7 @@
                         target="_blank">
                         Downloadable Standalone Application</a>
                     </li>
-                    <li style="margin-top: 5px">
+                    <li class="li-level-2">
                         Exploratory Only: 
                         <a href="https://psyarxiv.com/37fvm/"
                         target="_blank">Manuscript</a>
@@ -228,7 +261,7 @@
                         <a href="https://cran.r-project.org/package=exploratory"
                         target="_blank">R Package 'exploratory' on CRAN</a>
                     </li>
-                    <li style="margin-top: 5px">
+                    <li class="li-level-2">
                         R Package 'kim': 
                         <a href="https://cran.r-project.org/package=kim"
                         target="_blank">CRAN</a>
@@ -236,7 +269,7 @@
                         <a href="https://yale.qualtrics.com/jfe/form/SV_0ljMftWeUxUIU1U"
                         target="_blank">Manual PDF</a>
                     </li>
-                    <li style="margin-top: 5px">
+                    <li class="li-level-2">
                         R Package 'ezr':
                         <a href="https://cran.r-project.org/package=ezr"
                         target="_blank">CRAN</a>
