@@ -19,10 +19,11 @@
     <style>
         body {
             background: #f7f7f7;
+            font-family: 'Times New Roman', serif;
         }
         #main-container {
-            font-family: 'Times New Roman', serif;
-            width: 900px;
+            width: 96%; /* Make the container width 100% of the viewport width */
+            max-width: 900px; /* Do not exceed a width of 900px */
             margin: 20px auto;
             overflow: auto; /* Can prevent margin collapse */
             background: white;
@@ -64,6 +65,23 @@
             font-size: 105%;
             margin-left: -20px;
             margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            #main-container {
+                margin: 10px auto;
+                border-radius: 8px;
+                box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+                padding-top: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 8px;
+            }
+            .li-level-1 {
+                margin-left: -10px;
+            }
+            .li-level-2 {
+                margin-left: -30px;
+            }
         }
     </style>
 </head>
